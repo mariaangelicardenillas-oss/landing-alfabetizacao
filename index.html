@@ -38,7 +38,6 @@
             font-weight: 600;
         }
         
-        /* BANNER PRE-LANZAMIENTO */
         .prelaunch-banner {
             background: linear-gradient(135deg, var(--alerta) 0%, #d4664a 100%);
             color: white;
@@ -48,7 +47,6 @@
             font-size: 0.95em;
         }
         
-        /* ONDAS */
         .onda-top {
             margin-bottom: -5px;
             line-height: 0;
@@ -69,7 +67,6 @@
             height: 60px;
         }
         
-        /* HEADER */
         header {
             background: var(--crema);
             padding: 20px 0;
@@ -90,7 +87,6 @@
             margin-top: 5px;
         }
         
-        /* HERO */
         .hero {
             background: linear-gradient(135deg, var(--rosa-suave) 0%, var(--crema) 100%);
             padding: 60px 20px 80px;
@@ -175,7 +171,6 @@
             font-size: 0.95em;
         }
         
-        /* PRE-LAUNCH BOX */
         .prelaunch-box {
             background: linear-gradient(135deg, #FFF5E6 0%, #FFE8D6 100%);
             border: 2px solid var(--alerta);
@@ -193,7 +188,6 @@
             font-family: 'Playfair Display', serif;
         }
         
-        /* SECCIONES */
         .section {
             padding: 80px 20px;
             max-width: 1000px;
@@ -231,7 +225,6 @@
             margin: 0 auto;
         }
         
-        /* FEATURES */
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -276,7 +269,6 @@
             font-size: 1.5em;
         }
         
-        /* PRODUCT SHOWCASE */
         .product-showcase {
             background: var(--rosa-suave);
             padding: 60px;
@@ -311,11 +303,13 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
         }
         
-        .product-list li > span:first-child {
-            font-size: 2.5em;
-            flex-shrink: 0;
+        .icono-fase {
             width: 60px;
-            text-align: center;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         
         .product-list li > div {
@@ -353,7 +347,6 @@
             margin-top: -5px;
         }
         
-        /* BONUS */
         .bonus-section {
             background: linear-gradient(135deg, var(--dorado) 0%, var(--marron-claro) 100%);
             color: white;
@@ -395,7 +388,6 @@
             margin-bottom: 10px;
         }
         
-        /* TESTIMONIALS */
         .testimonials-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -441,7 +433,6 @@
             margin-top: 5px;
         }
         
-        /* SECURITY */
         .security-section {
             background: white;
             padding: 40px;
@@ -468,7 +459,8 @@
         }
         
         .badge-icon {
-            font-size: 2.5em;
+            font-size: 2em;
+            color: var(--marron);
         }
         
         .badge-text {
@@ -477,7 +469,6 @@
             font-weight: bold;
         }
         
-        /* PRICE */
         .price-section {
             background: linear-gradient(rgba(93, 78, 55, 0.9), rgba(93, 78, 55, 0.9)), 
                         url('https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&auto=format&fit=crop');
@@ -544,7 +535,6 @@
             opacity: 0.9;
         }
         
-        /* GUARANTEE */
         .guarantee {
             background: var(--verde-sage);
             color: white;
@@ -559,7 +549,6 @@
             margin-bottom: 20px;
         }
         
-        /* FAQ */
         .faq-item {
             background: white;
             margin-bottom: 20px;
@@ -598,7 +587,6 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
-        /* FOOTER */
         footer {
             background: var(--marron-oscuro);
             color: white;
@@ -606,7 +594,6 @@
             padding: 40px 20px;
         }
         
-        /* MOBILE */
         @media (max-width: 768px) {
             .prelaunch-banner {
                 font-size: 0.85em;
@@ -628,9 +615,9 @@
                 align-items: flex-start;
                 gap: 15px;
             }
-            .product-list li > span:first-child {
-                font-size: 2em;
-                width: auto;
+            .icono-fase {
+                width: 50px;
+                height: 50px;
             }
             .release-badge {
                 margin-left: 0;
@@ -651,54 +638,48 @@
 </head>
 <body>
 
-    <!-- BANNER PRE-LANZAMIENTO -->
     <div class="prelaunch-banner">
-        🚀 EDIÇÃO FUNDADOR: Você recebe 20 atividades imediatamente + o restante liberado semanalmente gratuitamente
+        EDIÇÃO FUNDADOR: Você recebe 20 atividades imediatamente + o restante liberado semanalmente gratuitamente
     </div>
 
-    <!-- HEADER -->
     <header>
-        <div class="logo">✨ Método Alfabetização Express</div>
+        <div class="logo">Método Alfabetização Express</div>
         <div class="tagline">Transformando a hora do estudo no momento favorito da criança</div>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
         <h1>Do Zero à Leitura<br>em 90 Dias</h1>
         <p class="hero-subtitle">Método completo para crianças de 5 a 8 anos, com apenas 20 minutos por dia</p>
         
-<img src="https://i.imgur.com/y9VRCFB.png" alt="Menina feliz lendo">        
+        <img src="https://i.imgur.com/JkjMhlz.png" alt="Menina feliz lendo">
+        
         <div class="prelaunch-box">
-            <h4>🎉 Oferta Especial de Lançamento</h4>
+            <h4>Oferta Especial de Lançamento</h4>
             <p>Como agradecimento por ser dos primeiros a confiar no método, você paga <strong>apenas $9 hoje</strong> e recebe <strong>acesso vitalício</strong> a todo o conteúdo (incluindo atualizações futuras).</p>
         </div>
         
-        <a href="#comprar" class="btn-principal">Quero Ser Fundador →</a>
-        <p class="urgency-text">🔥 De <strong>$47</strong> por apenas <strong>$9</strong> - Vagas limitadas</p>
+        <a href="#comprar" class="btn-principal">Quero Ser Fundador</a>
+        <p class="urgency-text">De <strong>$47</strong> por apenas <strong>$9</strong> - Vagas limitadas</p>
     </section>
 
-    <!-- ONDA -->
     <div class="onda-top">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#F5EDE4"></path>
         </svg>
     </div>
 
-    <!-- EMOTIONAL -->
     <section class="section section-beige">
         <p class="emotional-text">
             Imagine o brilho nos olhos do seu filho quando ele ler a primeira palavra sozinho. <strong>A alfabetização não precisa ser uma batalha.</strong> Com o método certo, ela se torna uma aventura diária de descobertas.
         </p>
     </section>
 
-    <!-- ONDA -->
     <div class="onda-bottom">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#F5EDE4"></path>
         </svg>
     </div>
 
-    <!-- FEATURES -->
     <section class="section section-crema">
         <h2 class="section-title">O Que Você Vai Receber</h2>
         <p class="section-subtitle">Acesso completo ao método para crianças de 5 a 8 anos</p>
@@ -707,28 +688,28 @@
             <div class="feature-card">
                 <span class="feature-badge">IMEDIATO</span>
                 <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=300&fit=crop" alt="Guia do Método">
-                <h3>📘 Guia do Método</h3>
+                <h3>Guia do Método</h3>
                 <p>50 páginas com o passo a passo completo para alfabetizar em 90 dias</p>
             </div>
             
             <div class="feature-card">
                 <span class="feature-badge">20 JÁ + 20 EM BREVE</span>
                 <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=400&h=300&fit=crop" alt="Atividades Interativas">
-                <h3>🎮 40 Atividades Interativas</h3>
+                <h3>40 Atividades Interativas</h3>
                 <p>20 atividades disponíveis imediatamente + 20 liberadas nas próximas 4 semanas</p>
             </div>
             
             <div class="feature-card">
                 <span class="feature-badge">LIBERAÇÃO SEMANAL</span>
                 <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop" alt="Vídeos Animados">
-                <h3>🎬 12 Vídeos Animados</h3>
+                <h3>12 Vídeos Animados</h3>
                 <p>3 vídeos imediatos + 9 vídeos extras liberados semanalmente (sem custo adicional)</p>
             </div>
             
             <div class="feature-card">
                 <span class="feature-badge">BÔNUS GRADUAL</span>
                 <img src="https://images.unsplash.com/photo-1516280440614-6697288d5d38?w=400&h=300&fit=crop" alt="Áudios Educativos">
-                <h3>🎧 20 Áudios Educativos</h3>
+                <h3>20 Áudios Educativos</h3>
                 <p>10 áudios disponíveis agora + 10 extras liberados ao longo do programa</p>
             </div>
         </div>
@@ -738,24 +719,22 @@
                 <strong>Conteúdo que cresce com seu filho</strong><br>
                 <span style="text-decoration: line-through; color: var(--marron-claro); font-size: 0.9em;">Valor normal: $47</span>
             </p>
-            <a href="#comprar" class="btn-secundario">Quero Garantir Meu Acesso Vitalício →</a>
+            <a href="#comprar" class="btn-secundario">Quero Garantir Meu Acesso Vitalício</a>
         </div>
     </section>
 
-    <!-- ONDA -->
     <div class="onda-top">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#F5EDE4"></path>
         </svg>
     </div>
 
-    <!-- CONTEÚDO -->
     <section class="section section-beige">
         <h2 class="section-title">Conteúdo do Método</h2>
         <p class="section-subtitle">12 semanas organizadas para crianças de 5 a 8 anos</p>
         
         <div class="prelaunch-box" style="margin-bottom: 40px;">
-            <h4>📅 Como Funciona a Liberação do Conteúdo?</h4>
+            <h4>Como Funciona a Liberação do Conteúdo?</h4>
             <p style="text-align: left; margin-top: 10px;">
                 1. <strong>Hoje (Imediato):</strong> Guia Completo + 20 Atividades + 3 Vídeos + 10 Áudios + 3 Bônus<br>
                 2. <strong>Semanas 2-5:</strong> +20 atividades e +3 vídeos (total 40 atividades, 6 vídeos)<br>
@@ -769,39 +748,256 @@
         
         <div class="product-showcase">
             <div class="product-header">
-                <h3>📚 4 Fases de Aprendizado</h3>
+                <h3>4 Fases de Aprendizado</h3>
             </div>
-           <ul class="product-list">
-    <li>
-        <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=100&h=100&fit=crop" alt="Fase 1" class="icono-fase">
-        <div>
-            <strong>Fase 1: Consciência Fonológica (Semanas 1-3)</strong>
-            <span class="release-badge">20 ATIVIDADES</span>
-            <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">10 disponíveis imediatamente + 10 na semana 2</span>
+            <ul class="product-list">
+                <li>
+                    <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?w=100&h=100&fit=crop" alt="Fase 1" class="icono-fase">
+                    <div>
+                        <strong>Fase 1: Consciência Fonológica (Semanas 1-3)</strong>
+                        <span class="release-badge">20 ATIVIDADES</span>
+                        <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">10 disponíveis imediatamente + 10 na semana 2</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=100&h=100&fit=crop" alt="Fase 2" class="icono-fase">
+                    <div>
+                        <strong>Fase 2: Alfabeto e Letras (Semanas 4-6)</strong>
+                        <span class="release-badge">10 ATIVIDADES</span>
+                        <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">Todas disponíveis na semana 3</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=100&h=100&fit=crop" alt="Fase 3" class="icono-fase">
+                    <div>
+                        <strong>Fase 3: Sílabas Simples (Semanas 7-10)</strong>
+                        <span class="release-badge">10 ATIVIDADES</span>
+                        <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">Liberadas semanalmente</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=100&h=100&fit=crop" alt="Fase 4" class="icono-fase">
+                    <div>
+                        <strong>Fase 4: Leitura Fluida (Semanas 11-12)</strong>
+                        <span class="release-badge">BÔNUS ESPECIAL</span>
+                        <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">Material avançado para leitura confiante</span>
+                    </div>
+                </li>
+            </ul>
         </div>
-    </li>
-    <li>
-        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=100&h=100&fit=crop" alt="Fase 2" class="icono-fase">
-        <div>
-            <strong>Fase 2: Alfabeto e Letras (Semanas 4-6)</strong>
-            <span class="release-badge">10 ATIVIDADES</span>
-            <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">Todas disponíveis na semana 3</span>
+        
+        <div class="cta-center">
+            <a href="#comprar" class="btn-principal">Sim, Quero Meu Filho Lendo em 90 Dias</a>
         </div>
-    </li>
-    <li>
-        <img src="https://images.unsplash.com/photo-1587614382346-4ec70e388b28?w=100&h=100&fit=crop" alt="Fase 3" class="icono-fase">
-        <div>
-            <strong>Fase 3: Sílabas Simples (Semanas 7-10)</strong>
-            <span class="release-badge">10 ATIVIDADES</span>
-            <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">Liberadas semanalmente</span>
+    </section>
+
+    <section class="section section-crema">
+        <h2 class="section-title">Bônus Especiais</h2>
+        <p class="section-subtitle">Materiais complementares exclusivos no valor de $19</p>
+        
+        <div class="bonus-section">
+            <h3>6 Bônus Inclusos (Valor: $19)</h3>
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <strong>Planilha de Acompanhamento</strong>
+                    Acompanhe o progresso semanal
+                </div>
+                <div class="bonus-item">
+                    <strong>20 Fichas de Leitura</strong>
+                    Material extra para prática
+                </div>
+                <div class="bonus-item">
+                    <strong>Guia "Lidando com Resistência"</strong>
+                    Estratégias para pais
+                </div>
+                <div class="bonus-item">
+                    <strong>Calendário de Recompensas</strong>
+                    Sistema de motivação visual
+                </div>
+                <div class="bonus-item">
+                    <strong>Certificados Mensais</strong>
+                    Celebração de conquistas
+                </div>
+                <div class="bonus-item">
+                    <strong>Acesso Vitalício</strong>
+                    Todas as atualizações futuras
+                </div>
+            </div>
         </div>
-    </li>
-    <li>
-        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=100&h=100&fit=crop" alt="Fase 4" class="icono-fase">
-        <div>
-            <strong>Fase 4: Leitura Fluida (Semanas 11-12)</strong>
-            <span class="release-badge">BÔNUS ESPECIAL</span>
-            <span style="display: block; width: 100%; margin-top: 5px; color: var(--marron);">Material avançado para leitura confiante</span>
+    </section>
+
+    <section class="section section-beige">
+        <h2 class="section-title">O Que as Mães Estão Dizendo</h2>
+        <p class="section-subtitle">Histórias reais de famílias com crianças de 5 a 8 anos</p>
+        
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=200&h=200&fit=crop" alt="Ana Paula" class="testimonial-img">
+                <p class="testimonial-text">
+                    "Meu filho de 6 anos odiava sentar para estudar. Com esse método, ele mesmo me pede para 'fazer as atividades do jogo'. Em 2 meses, já está lendo palavras sozinho!"
+                </p>
+                <p class="testimonial-author">Ana Paula</p>
+                <p class="testimonial-location">Mãe do Lucas, 6 anos (São Paulo)</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=200&h=200&fit=crop" alt="Mariana" class="testimonial-img">
+                <p class="testimonial-text">
+                    "Finalmente encontrei algo que funciona! Minha filha tem 5 anos e nada segurava a atenção dela. Essas atividades interativas são mágicas."
+                </p>
+                <p class="testimonial-author">Mariana Costa</p>
+                <p class="testimonial-location">Mãe da Júlia, 5 anos (Rio de Janeiro)</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop" alt="Carla" class="testimonial-img">
+                <p class="testimonial-text">
+                    "Sou professora do 1º ano e uso esse método para reforçar meus alunos. Os resultados são incríveis! Vale cada centavo dos $9 investidos."
+                </p>
+                <p class="testimonial-author">Carla Mendes</p>
+                <p class="testimonial-location">Professora e Mãe do Pedro, 7 anos (Belo Horizonte)</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1488893495047-10598e594561?w=200&h=200&fit=crop" alt="Juliana" class="testimonial-img">
+                <p class="testimonial-text">
+                    "Moro em Portugal e aqui o ensino é diferente. Esse método me ajudou a ensinar português do Brasil para minha filha de 8 anos de forma lúdica."
+                </p>
+                <p class="testimonial-author">Juliana Santos</p>
+                <p class="testimonial-location">Mãe da Maria, 8 anos (Lisboa, Portugal)</p>
+            </div>
+
+            <div class="testimonial-card">
+                <img src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?w=200&h=200&fit=crop" alt="Fernanda" class="testimonial-img">
+                <p class="testimonial-text">
+                    "Depois de gastar muito com reforço escolar caro, esses $9 foram a melhor compra que fiz. Meu filho de 5 anos passou de 'não quero estudar' para 'posso fazer mais?'."
+                </p>
+                <p class="testimonial-author">Fernanda Lima</p>
+                <p class="testimonial-location">Mãe do Gabriel, 5 anos (Curitiba)</p>
+            </div>
         </div>
-    </li>
-</ul>
+        
+        <div class="cta-center" style="margin-top: 50px;">
+            <a href="#comprar" class="btn-principal">Junte-se a Essas Famílias</a>
+            <p class="urgency-text">7 dias de garantia incondicional</p>
+        </div>
+    </section>
+
+    <section class="section section-crema">
+        <div class="security-section">
+            <h3 style="color: var(--marron-oscuro); margin-bottom: 10px;">Compra 100% Segura via Hotmart</h3>
+            <p style="color: var(--marron); margin-bottom: 20px;">Sua transação está protegida pela Hotmart, a maior e mais segura plataforma de produtos digitais da América Latina</p>
+            
+            <div class="security-badges">
+                <div class="badge-item">
+                    <div class="badge-text">Hotmart<br>Segura</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-text">SSL<br>256-bit</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-text">Pagamento<br>Criptografado</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-text">Garantia<br>7 Dias</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="price-section" id="comprar">
+        <h2>Invista no Futuro do Seu Filho</h2>
+        <p>Valor real de todo o conteúdo: $47</p>
+        
+        <div class="price-box">
+            <div class="price-original">De $19</div>
+            <div class="price-current">
+                <span class="price-currency">$</span>9
+            </div>
+            <p>One-time payment • Lifetime access • 7-day guarantee</p>
+            <p style="font-size: 0.9em; margin-top: 10px; opacity: 0.9;">Pagamento único de <strong>$9 USD</strong> (cerca de R$ 47) • Acesso vitalício • 7 dias de garantia</p>
+        </div>
+        
+        <div class="hotmart-info">
+            <strong>Processado por Hotmart</strong><br>
+            Você será redirecionado para a plataforma Hotmart para finalizar sua compra com total segurança.<br>
+            Aceitamos: Cartão de crédito internacional, PayPal, e múltiplas formas de pagamento.
+        </div>
+        
+        <a href="https://pay.hotmart.com/SEU_LINK" class="btn-comprar">QUERO O MÉTODO AGORA</a>
+        
+        <p style="margin-top: 20px; font-size: 0.8em; opacity: 0.8;">
+            Site 100% seguro • Hotmart Protected Purchase
+        </p>
+    </section>
+
+    <section class="section section-crema">
+        <div class="guarantee">
+            <h3>Garantia Incondicional de 7 Dias</h3>
+            <p>Você tem uma semana inteira para testar o método. Se não ver seu filho engajado e progredindo, devolvemos 100% do seu investimento ($9). Sem perguntas, sem burocracia.</p>
+            
+            <div style="margin-top: 30px;">
+                <a href="#comprar" class="btn-principal" style="background: white; color: var(--marron-oscuro);">Sim, Quero Garantir Minha Vaga</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-beige">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                Para que idade é indicado? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                Ideal para crianças de 5 a 8 anos (do pré-escolar ao 3º ano). O método foi especificamente desenvolvido para essa faixa etária.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                Como funciona o pagamento em dólar? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                O valor de $9 USD será convertido para sua moeda local no momento da compra pela Hotmart (aproximadamente R$ 47 reais). Você pode pagar com cartão internacional ou PayPal.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                Funciona para crianças de 5 anos? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                Sim! A Fase 1 foi especialmente desenhada para crianças de 5 anos que estão começando o processo de alfabetização.
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <div class="faq-question" onclick="this.parentElement.classList.toggle('active')">
+                É seguro comprar pela Hotmart? <span>+</span>
+            </div>
+            <div class="faq-answer">
+                Sim! A Hotmart é a maior plataforma de produtos digitais da América Latina, com mais de 10 milhões de usuários. Seu pagamento é processado com criptografia SSL de 256-bit.
+            </div>
+        </div>
+        
+        <div class="cta-center" style="margin-top: 50px;">
+            <p style="margin-bottom: 20px; color: var(--marron-oscuro); font-weight: bold;">Ainda tem dúvidas? Não deixe seu filho perder mais tempo!</p>
+            <a href="#comprar" class="btn-secundario">Quero Começar Agora por $9</a>
+        </div>
+    </section>
+
+    <section style="background: var(--marron-oscuro); padding: 60px 20px; text-align: center;">
+        <h2 style="color: white; margin-bottom: 20px; font-size: 2em;">Não Perca Mais Tempo</h2>
+        <p style="color: var(--crema); margin-bottom: 30px; font-size: 1.2em;">Cada dia que passa é uma oportunidade perdida de ver seu filho lendo com confiança</p>
+        <a href="#comprar" class="btn-comprar" style="background: var(--dorado); color: var(--marron-oscuro); font-size: 1.4em; padding: 25px 70px;">COMPRAR AGORA - $9</a>
+        <p style="color: white; margin-top: 20px; opacity: 0.8; font-size: 0.9em;">Compra segura via Hotmart • 7 dias de garantia</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Método Alfabetização Express. Todos os direitos reservados.</p>
+        <p style="margin-top: 10px; font-size: 0.9em;">Vendido através da Hotmart • Plataforma segura de produtos digitais</p>
+    </footer>
+
+</body>
+</html>
